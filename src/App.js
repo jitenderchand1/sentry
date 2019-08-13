@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import * as Sentry from '@sentry/browser';
 import './App.css';
 
-if(process.env.REACT_APP_ENV === 'release'){
-  Sentry.init({dsn: "https://3xxxee3xxxa4dde8031d0f8d5081250@sentry.io/1529699"});
+if(false){
+  Sentry.init({dsn: "https://f17512637ba248b595266674f5c43a55@sentry.io/1529718"});
 }
+
 
 
 Sentry.captureMessage("dsdd", "sadf")
