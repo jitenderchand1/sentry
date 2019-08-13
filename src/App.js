@@ -3,7 +3,12 @@ import logo from './logo.svg';
 import * as Sentry from '@sentry/browser';
 import './App.css';
 
-Sentry.init({dsn: "https://61a77ee231ab491ab40cd264b170b567@sentry.io/1529511", release: "1.0.1"});
+if(process.env.REACT_APP_ENV === 'release'){
+  Sentry.init({dsn: "https://3xxxee3xxxa4dde8031d0f8d5081250@sentry.io/1529699"});
+}
+
+
+Sentry.captureMessage("dsdd", "sadf")
 
 const check = () => {
   throw Error('Error')
