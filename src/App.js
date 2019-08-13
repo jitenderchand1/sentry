@@ -12,7 +12,7 @@ if(false){
 Sentry.captureMessage("dsdd", "sadf")
 
 const check = () => {
-  throw Error('Error')
+  throw Error('new Error')
 }
 
 function App() {
