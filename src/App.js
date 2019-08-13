@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import * as Sentry from '@sentry/browser';
 import './App.css';
 
-Sentry.init({dsn: "https://61a77ee231ab491ab40cd264b170b567@sentry.io/1529511"});
+Sentry.init({dsn: "https://61a77ee231ab491ab40cd264b170b567@sentry.io/1529511", release: "1.0.1"});
 
 const check = () => {
   throw Error('Error')
